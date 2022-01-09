@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.budailad.Mapper.UserMapper">
+
+    <resultMap type="com.budailad.Entity.User" id="userResult">
+        <id property="ID" column="id" />
+        <result property="userName" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+
+    <select id="get" resultMap="userResult" parameterType="String">
+        select * from tb_user
+        where id = #{ ID }
+    </select>
+
+    <update id="update" parameterType="com.budailad.Entity.User">
+        update tb_user
+        set username = #{ userName }
+        and password = #{ password }
+        where id = #{ ID }
+    </update>
+
+</mapper>
