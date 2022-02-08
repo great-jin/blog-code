@@ -1,10 +1,10 @@
-package com.budailad.Services.Impl;
+package com.budailad.services.Impl;
 
-import com.budailad.Entity.User;
-import com.budailad.Mapper.UserMapper;
-import com.budailad.Services.UserServices;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.budailad.entity.User;
+import com.budailad.mapper.UserMapper;
+import com.budailad.services.UserServices;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class UserServicesImpl implements UserServices {

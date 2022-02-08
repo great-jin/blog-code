@@ -1,6 +1,6 @@
-package com.budailad.Mapper;
+package com.budailad.mapper;
 
-import com.budailad.Entity.User;
+import com.budailad.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
