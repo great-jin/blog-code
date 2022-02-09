@@ -5,12 +5,11 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
-import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User implements Serializable {
+public class User {
 
     /**
      *  标识数据表主键
