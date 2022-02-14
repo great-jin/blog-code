@@ -10,6 +10,10 @@
         <result property="password" column="password"/>
     </resultMap>
 
+    <select id="list" resultMap="userResult">
+        select * from tb_user
+    </select>
+
     <select id="get" resultMap="userResult" parameterType="String">
         select * from tb_user
         where id = #{ ID }
