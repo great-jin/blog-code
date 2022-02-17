@@ -16,13 +16,11 @@ public class UserServicesImpl implements UserServices {
     private UserMapper userMapper;
 
     @Override
-    @Cacheable(key = "#ID")
     public User get(String ID) {
         return userMapper.get(ID);
     }
 
     @Override
-    @Cacheable(key = "#user.ID")
     public int update(User user) {
         return userMapper.update(user);
     }

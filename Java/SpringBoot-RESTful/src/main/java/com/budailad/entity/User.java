@@ -12,7 +12,7 @@ import javax.persistence.GeneratedValue;
 public class User {
 
     /**
-     *  标识数据表主键
+     *  标识主键
      */
     @Id
     @GeneratedValue
